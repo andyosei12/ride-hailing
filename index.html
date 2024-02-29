@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ride Hailing</title>
+  </head>
+  <body>
+    <main>
+      <h1>Swift Ride Hailing</h1>
+      <div>
+        <a href="./sender" class="rider">Request a Ride</a>
+        <a href="./driver" class="driver">Driver Login</a>
+      </div>
+    </main>
+  </body>
+</html>
+
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+
+  main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(to right, #f6d365, #fda085);
+  }
+
+  @media (max-width: 693px) {
+    main {
+      /* padding: 0 20px; */
+      text-align: center;
+    }
+  }
+
+  main h1 {
+    font-size: 5rem;
+    margin-bottom: 20px;
+  }
+
+  main div {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+  }
+
+  @media (max-width: 693px) {
+    main div {
+      /* padding: 0 20px; */
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+  }
+
+  main div a {
+    color: #000;
+    text-decoration: none;
+  }
+
+  .rider {
+    padding: 1rem 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    font-weight: 600;
+  }
+
+  .rider:hover {
+    background-color: #f6d365;
+  }
+
+  .driver:hover {
+    text-decoration: underline;
+  }
+</style>
